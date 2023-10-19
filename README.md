@@ -5,3 +5,5 @@ Contains implementation and visualization for the following metaheuristic optimi
 - Local Search
 - Variable Neighborhood Search
 - Generalized Neighborhood Search
+
+Edit [config.yml](./config/config.yml) to change configuration and hyperparameters.
