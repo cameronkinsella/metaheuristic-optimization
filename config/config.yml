@@ -1,7 +1,7 @@
 search_algorithm: vns  # Options: vns, gns
 dimensions: 2
 convergence_threshold: 0.001
-plot_results: true
+plot_results: true  # requires dimensions >= 2
 show_vns_steps: false
 
 local_search:

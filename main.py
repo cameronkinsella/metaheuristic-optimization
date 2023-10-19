@@ -1,3 +1,4 @@
+import sys
 from typing import Callable
 
 from algo import variable_neighborhood_search, generalized_neighborhood_search
@@ -11,6 +12,10 @@ if __name__ == '__main__':
     vns_max_itr: int = config['vns']['max_itr']
     ls_max_itr: int = config['local_search']['max_itr']
     m_max: int = config['gns']['layers']
+
+    if dimensions < 2 and config['plot_results']:
+        print("Error: Must have >=2 dimensions to plot results")
+        sys.exit(1)
 
     search_algorithms: dict[str, Callable] = {
         'vns': lambda: variable_neighborhood_search(k_max, dimensions, convergence_threshold,
