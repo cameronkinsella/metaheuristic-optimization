@@ -1,0 +1,15 @@
+search_algorithm: vns  # Options: vns, gns
+dimensions: 2
+convergence_threshold: 0.001
+plot_results: true
+show_vns_steps: false
+
+local_search:
+  max_itr: 5000
+vns:
+  max_itr: 1
+  neighborhoods:
+    count: 36
+    num_to_plot: 3
+gns:
+  layers: 5
